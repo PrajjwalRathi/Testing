@@ -35,8 +35,8 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest
       env:
-          SECRET_1: ${{ secrets.secret_1 }}
-          SECRET_2: ${{ secrets.secret_2 }}
+          SECRET_1: ${{ secrets.SECRET_1 }}
+          SECRET_2: ${{ secrets.SECRET_2 }}
       run: |
           pytest .\fasttrack\ui\test_dev.py  --config-env=dev
 
