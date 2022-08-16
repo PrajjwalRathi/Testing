@@ -10,8 +10,8 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-my_email = os.environ.get('SECERT_1')
-my_password = os.environ.get('SECERT_2')
+my_email = os.environ['SECERT_1']
+my_password = os.environ['SECERT_2']
 Agent_email = 'abcde@gmail.com'
 Agent_role = 'Agent'
 Agent_name = 'abc@#123'
